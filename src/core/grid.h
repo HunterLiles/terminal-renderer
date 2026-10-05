@@ -7,7 +7,7 @@ typedef struct {
   int width;
   int height;
   size_t elem_size;
-} Vector;
+} Grid;
 
-void vector_resize(Vector *v, int width, int height);
-void vector_free(Vector *v);
+int grid_resize(Grid *grid, int width, int height);
+void grid_free(Grid *grid);
